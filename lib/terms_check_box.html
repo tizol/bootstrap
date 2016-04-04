@@ -1,0 +1,15 @@
+<!-- <template name="customTermsPolicy">
+  <label class="i-checks" style="font-weight: 200;">
+    <input type="checkbox" tabindex="0" aria-checked="true" aria-required="false" aria-invalid="false"><i></i>  By Registering, you agree to our <a href="">terms and policy</a>
+  </label>
+</template> -->
+<template name="termsCheckbox">
+  <div class="at-input inline field" id="style-checkbox">
+    <div class="ui checkbox">
+      <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
+      <label style="font-weight: 200;" for="at-field-{{_id}}">
+        I've read and agree to the <a href="/terms">Terms and Conditions</a>
+      </label>
+    </div>
+  </div>
+</template>

@@ -1,6 +1,6 @@
 <template name="atForm">
   {{#unless hide}}
-    <div class="at-form">
+    <div class="at-form text-center">
       {{#if showTitle}}
         {{> atTitle}}
       {{/if}}
@@ -28,9 +28,11 @@
       {{#if showSignInLink}}
         {{> atSigninLink}}
       {{/if}}
-      {{#if showSignUpLink}}
-        {{> atSignupLink}}
-      {{/if}}
+
+        {{#if showSignUpLink}}
+          {{> atSignupLink}}
+        {{/if}}
+
       {{#if showResendVerificationEmailLink}}
         {{> atResendVerificationEmailLink}}
       {{/if}}
